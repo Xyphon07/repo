@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html,
+        body {
+         
+            display: flex;
+            background: linear-gradient(45deg, black, rgb(0, 0, 112));
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .box {
+            height: 60%;
+            width: 30%;
+
+            background-color: grey;
+
+            opacity: 30%;
+            border-radius: 30px;
+
+            overflow: hidden;
+            --borderimg: 6;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .box:before {
+            content: '';
+            position: absolute;
+            height: 60%;
+            width: 30%;
+            background: linear-gradient(45deg, violet, indigo, blue, green, yellow, orange, red);
+            z-index: 2;
+            animation: animate 2s  linear  infinite;
+            filter: drop-shadow(30px);
+
+            filter: contrast(200%);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+           
+        }
+
+        @keyframes animate {
+            0% {
+                filter: hue-rotate(0deg);
+
+
+            }
+
+            100% {
+                filter: hue-rotate(360deg);
+
+
+            }
+        }
+
+        ul>li>a {
+            height: 25%;
+            width: 46%;
+            background-color: #fff;
+            z-index: 6;
+            text-decoration: none;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: inherit;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            box-shadow: -4px -4px  black  ;
+          animation: mi 2s linear infinite;
+          filter: invert(1);
+          
+          
+        }
+    @keyframes mi{
+        0%,  100% {
+filter: invert(1);
+        }
+     50%{
+            filter: inherit;
+        }
+    }
+
+
+
+        ul,
+        li {
+            z-index: 3;
+            list-style: none;
+            text-decoration: none;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+
+
+        <ul>
+            <li>
+                <a href="/now i can do thid.html"> Return </a>
+            </li>
+            <li>
+                <a href="/wew want anything/rotate.html"> ilusion </a>
+            </li>
+            <li>
+                <a href="#"> Rotateting cube </a>
+            </li>
+        </ul>
+
+
+
+    </div>
+</body>
+
+</html>

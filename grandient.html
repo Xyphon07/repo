@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Document</title>
+  <style>
+    html,
+
+    html,
+    body {
+
+      --borderheight: -1;
+      height: 100%;
+      width: 100%;
+      z-index: var(--borderheight);
+      background-color: #000;
+    }
+
+    .class {
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: fit-content;
+      width: 100%;
+    }
+
+    #box {
+
+      width: 500px;
+      height: 65vh;
+      color: transparent;
+
+
+    }
+
+    .gradient-border {
+      --borderWidth: 3px;
+
+      position: relative;
+      border-radius: var(--borderWidth);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .gradient-border:after {
+      content: '';
+      position: absolute;
+      top: calc(-1 * var(--borderWidth));
+      left: calc(-1 * var(--borderWidth));
+      height: calc(100% + var(--borderWidth) * 2);
+      width: calc(100% + var(--borderWidth) * 2);
+      background: linear-gradient(60deg, #a33ea3, #4b0082, #0000ff, #1e0070, #dc143c, orange, #00ffff);
+      border-radius: 37px;
+      z-index: 1;
+      animation: animatedgradient 3s ease alternate infinite;
+      background-size: 300% 300%;
+      overflow: auto;
+
+    }
+
+
+    @keyframes animatedgradient {
+      0% {
+        background-position: 0% 50%;
+      }
+
+      50% {
+        background-position: 100% 50%;
+      }
+
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+
+    .h {
+      color: crimson;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 61px;
+      z-index: 0;
+    }
+
+    .g {
+      width: 442px;
+      height: 39px;
+
+
+    }
+
+    .i {
+      font-size: xx-large;
+      color: cyan;
+
+    }
+
+    .ge {
+
+      width: 442px;
+      height: 39px;
+
+    }
+
+    .clas {
+
+      color: cyan;
+
+
+    }
+
+    #n {
+
+      color: cyan;
+
+    }
+
+    .v {
+
+      color: cyan;
+
+    }
+
+    #y {
+
+
+      border-radius: 100px;
+      font-size: 16px;
+      color: #00ffff;
+      height: 47px;
+
+
+
+    }
+
+    .j {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0%;
+      padding: 0%;
+
+    }
+
+    form {
+      z-index: 10;
+      position: absolute;
+      top: 7%;
+      height: calc(100% + var(--borderWidth) * 2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1 class="h">Driving license form</h1>
+
+  <div class="class">
+    <div class="gradient-border" id="box">
+      <form>
+
+        <h1 class="i">:First name</h1>
+
+        <input type="text" class="g" placeholder="First name">
+
+        <h1 class="clas"> Second name</h1>
+        <input type="text" class="ge" placeholder="Second name">
+        <h1 class="v">:Aadhar card image</h1>
+        <input type="file" id="n">
+
+        <div class="j">
+          <button type="submit" id="y" <h1>Submit
+            </h1>> ></button>
+        </div>
+      </form>
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>

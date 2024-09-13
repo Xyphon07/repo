@@ -1,0 +1,22 @@
+html,body{
+    height:100vh;
+    width:100%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background-color: #fff000;
+}
+div{
+    height: 51px;
+    width: 159px;
+    border-radius: 100px;
+    background: #fff;
+    transform: rotate(-53deg);
+    border: 4px solid #ffff;
+    box-shadow: 0 0 35px 0 rgb(0 0 0 / 28%), -16px 14px 35px 0 rgb(0 0 0 / 10%) inset;
+   
+}
+div:first-child{
+    margin-top: -181px;
+    margin-right: -127px;
+}

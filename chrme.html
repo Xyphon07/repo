@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+       *{
+           margin: 0%;
+           padding:  0%;
+           box-sizing: border-box;
+       }
+       body{
+           background-color: black;
+           height: 100%;
+           width: 100%;
+       }
+       header{
+           height: 20%;
+           width: 100%;
+           background-color: transparent;
+        display: flex;
+       align-items: center;
+
+       }
+    .home{
+        height: 20%;
+           width: 75%;
+           background-color: transparent;
+    }
+    a{
+        margin-left: 2%;
+    }
+    section{
+        height: 80%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+   section > h1{
+margin-top: 20%;
+margin-bottom: 10%;
+color: rgb(255, 255, 255);
+text-transform: capitalize;
+/* text-shadow: 0 18px 0px white,0 36px 0px white; */
+font-size:calc(100% + 45px);
+}
+#block{
+    height: 60px;
+        width: 300px;
+    margin-top: 10vh;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:row;
+       
+       
+}
+#block>span{
+   
+    height: 60px;
+    margin-left: .8vh;
+    width: 60px;
+    background: gray;
+    display:inline-block;
+    border-radius: 5px;
+    
+
+}
+.acs{
+    height: 40px;
+    margin-top: 7vh;
+    width: 300px;
+    display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction:row;
+
+}
+.acs span{
+border-radius: 50%;
+  height: 38px;
+  background: gray;
+    width: 38px;}
+    .acs span:nth-child(2){
+        margin-left: 7vh;
+        margin-right: 7vh;}
+    #int{
+      height: 40px;
+      width: 300px;
+      border-radius: 40px;
+    }
+   </style>
+</head>
+<body>
+    <header>
+       <span class="home"><a href="#">home</a></span>
+        <a href="#">email id</a>
+        <a href="#">tab</a>
+        <a href="#">menu</a>
+    </header>
+    <section>
+        <h1>google
+        </h1>
+        <input type="text" name="" id="int">
+       <div id="block"><span></span><span></span><span></span><span></span><span></span></div>
+        <div class="acs"><span></span><span></span><span></span></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0%;
+            padding:0%;
+            box-sizing: border-box;
+        }
+        html,
+body {
+   min-height: 100vh;
+    width: 100vw;
+    background:#050505;
+    display: flex;
+          justify-content: center;
+          align-items: center; 
+          flex-direction:column;
+   
+}
+#container{
+    height:100px;
+    width:100px;
+    background-color:transparent;
+    display: flex;
+          justify-content: center;
+          align-items: center; transform-style: preserve-3d;
+          transform: rotateX(-30deg);
+animation:rotate 20s linear infinite;
+margin-bottom:9vh;
+}
+@keyframes rotate{
+    0%{
+        transform: rotateX(-30deg) rotateY(0deg);
+    }
+    100%{
+        transform: rotateX(-390deg) rotateY(360deg);
+    }
+}
+#container #rotate_box{
+    height:100%;
+    width:100%;
+ position: absolute;
+ top: 0%;
+ left: 0%;
+    background-color:transparent;
+    transform-style: preserve-3d;
+}
+#container #rotate_box span{
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   height: 100%;
+   width: 100%;
+    background:linear-gradient(#5E9D34,#c06a2b);
+    transform-style: preserve-3d;
+    transform: rotatey(calc(90deg * var(--rt))) translatez(50px);
+    background-image:url(IMG_20211206_105856.jpg);
+}
+#container #rotate_box .top{
+    position: absolute;
+   top: 0%;
+   left: 0%;
+   height: 100%;
+   width: 100%;
+   background:#5E9D34;
+    transform-style: preserve-3d;
+    transform: rotatex(90deg) translatez(50px);
+    background-image:url(IMG_20211206_105856.jpg);
+}
+#container2{
+    height:100px;
+    width:100px;
+    background-color:transparent;
+    display: flex;
+          justify-content: center;
+          align-items: center; transform-style: preserve-3d;
+          transform: rotateX(-30deg);
+animation:rotate 20s linear infinite;
+}
+#container2 #rotate_box2{
+    height:100%;
+    width:100%;
+ position: absolute;
+ top: 0%;
+ left: 0%;
+    background-color:transparent;
+    transform-style: preserve-3d;
+}
+#container2 #rotate_box2 span{
+   position: absolute;
+   top: 0%;
+   left: 0%;
+   height: 100%;
+   width: 100%;
+    background:linear-gradient(#5E9D34,#c06a2b);
+    transform-style: preserve-3d;
+    transform: rotatey(calc(90deg * var(--t))) translatez(50px);
+    background-image:url(toppng.com-block-of-grass-from-the-game-minecraft-minecraft-grass-block-vector-1600x1600.png);
+}
+#container2 #rotate_box2 .top2{
+    position: absolute;
+   top: 0%;
+   left: 0%;
+   height: 100%;
+   width: 100%;
+   background:#5E9D34;
+    transform-style: preserve-3d;
+    transform: rotatex(90deg) translatez(50px);
+    background-image:url(52c9673373857841cb8a0ff776f8279e.jpg);
+}
+.bottom2{
+position:absolute;
+top:0%;
+left:0%;
+height:100%;
+width:100%;
+transform-style:preserve-3d;
+transform:rotatex(90deg) translatez(-50px);
+background-image:url(52c9673373857841cb8a0ff776f8279e.jpg);
+}
+.bottom{
+position:absolute;
+top:0%;
+left:0%;
+height:100%;
+width:100%;
+transform-style:preserve-3d;
+transform:rotatex(90deg) translatez(-50px);
+background-image:url(IMG_20211206_105856.jpg);}
+ </style>
+</head>
+<body>
+    <div id="container">
+        <div id="rotate_box">
+            <span style=" --rt:0;"></span>
+            <span style=" --rt:1;"></span>
+            <span style=" --rt:2;"></span>
+            <span style=" --rt:3;"></span>
+           <div class="top"></div>
+           <div class="bottom" ></div>
+        </div>
+    </div>
+    <div id="container2">
+    <div id="rotate_box2">
+    <span style=" --t:0;"></span>
+    <span style=" --t:1;"></span>
+    <span style=" --t:2;"></span>
+    <span style=" --t:3;"></span>
+    <div class="top2"></div>
+    <div class="bottom2" ></div>
+    </div>
+    </div>
+</body>
+</html>

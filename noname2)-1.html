@@ -1,0 +1,41 @@
+<!Doctype html>
+<html>
+<head>
+<title>fun</title>
+<style type="text/css">
+body{
+height:100vh;
+width:100vw;
+Background:#000;
+}
+div{
+height:20vh;
+background-color:lime;
+width:20vh;
+margin-top:calc(22vh * var(--rt));
+Border-radius:50%;
+animation:an 5s linear infinite;
+animation-delay:calc( 0.1s * var(--rt));
+position:fixed;
+Display:inline-block;
+}
+@keyframes an{
+0%,100%{
+left:0vw;
+Background-color:lime;
+}
+50%{
+left:60vw;
+Background-color:var(--ty);
+Box-shadow:0 0 20px var(--ty),0 0 40px var(--ty),0 0 60px var(-ty),0 0 80px var(--ty), 0 0 0 100px var(--ty);
+}
+}
+</style>
+</head>
+<body>
+<div style=" --rt:0; --ty:yellow;"></div>
+<div style="--rt:1; --ty:blue;"></div>
+<div style="--rt:2; --ty:red;"></div>
+<div style="--rt:3; --ty:orange;"></div>
+</body>
+</html>
